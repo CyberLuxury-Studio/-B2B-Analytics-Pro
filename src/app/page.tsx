@@ -1,5 +1,8 @@
 "use client";
 
+import { MetricCardsSection } from "./MetricCardsSection";
+
+
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
