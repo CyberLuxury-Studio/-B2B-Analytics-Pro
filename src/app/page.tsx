@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import dynamic from "next/dynamic";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Zap, Sparkles, Terminal, Activity, Database, Shield, Globe, Gamepad2, ChevronRight, Trophy } from "lucide-react";
 
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
@@ -17,8 +17,8 @@ const Spline = dynamic(() => import("@splinetool/react-spline"), {
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [demoLevel, setDemoLevel] = useState(1);
-  const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], [0, -200]);
+  
+  
 
   useEffect(() => {
     const handleScroll = () => {
